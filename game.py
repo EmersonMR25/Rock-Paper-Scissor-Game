@@ -5,7 +5,7 @@ print("ROCK, PAPER, SCISSORS ... SHOOT!")
 
 #PROMT USER FOR IMPUT
 
-user_choice = input("CHOOSE 'rock', 'paper' or 'scissors': ")
+user_choice = input("CHOOSE 'rock', 'paper' OR 'scissors': ")
 print("USER HAS CHOSEN:")
 print(user_choice)
 
@@ -20,24 +20,33 @@ print(computer_choice)
 # DETERMING THE WINNER
 
 if computer_choice == user_choice:
-    print("Both chose the same. It is a tie!")
+    print("BOTH CHOSE THE SAME OUTCOME. IT IS A TIE!")
 elif user_choice == "rock":
     if computer_choice == "scissors":
-        print("Rock smashes scissors. YOU WIN!")
+        print("ROCK SMASHES SCISSORS. YOU WIN!")
     else:
-        print("Paper covers rock. YOU LOOSE!")
+        print("PAPER COVERS ROCK. YOU LOOSE!")
+
+    print("THANK YOU FOR PLAYING!!!!!!!!")
+
 elif user_choice == "paper":
     if computer_choice == "rock":
-        print("Paper convers rock. YOU WIN!")
+        print("PAPER COVERS ROCK. YOU WIN!")
     else:
-        print("Scissors cuts paper. YOU LOOSE!")
+        print("SCISSORS CUTS PAPER. YOU LOOSE!")
+    
+    print("THANK YOU FOR PLAYING!!!!!!!!")
+
 elif user_choice == "scissors":
     if computer_choice == "paper":
-        print("Paper cuts paper. YOU WIN!")
+        print("SCISSORS CUTS PAPER. YOU WIN!")
     else:
-        print("Rock smashes paper. YOU LOOSE!")
+        print("ROCK SMASHES SCISSORS. YOU LOOSE!")
+    
+    print("THANK YOU FOR PLAYING!!!!!!!!")
+    
+else:
+    print("THAT IS NOT A VALID PLAY. CHECK YOUR SPELLING!!")
 
 
-# PLAY AGAIN 
-## (Got ir from GOOGLE)
 
