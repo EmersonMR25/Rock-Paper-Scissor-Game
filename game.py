@@ -16,3 +16,8 @@ computer_choice = random.choice(computer_options)
 print("Computer chose:")
 print(computer_choice)
 
+# Determining THE WINNER
+
+if computer_choice == user_choice:
+    print("It is a tie")
+    
