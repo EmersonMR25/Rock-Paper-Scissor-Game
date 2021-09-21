@@ -1,62 +1,70 @@
 # game.py
+
 import random
-print("--------------------------------------------------------")
-print("ROCK, PAPER, SCISSORS ... SHOOT!")
-print("--------------------------------------------------------")
 
-#PROMT USER FOR IMPUT
+print ("-------------------")
+print ("ROCK, PAPER, SCISSORS ... SHOOT! ")
+print ("-------------------")
 
-user_choice = input("CHOOSE 'rock', 'paper' OR 'scissors': ")
-print("--------------------------------------------------------")
-print("USER HAS CHOSEN:")
+# PROMPT USER FOR INPUT
+
+#x = input("Choose 'rock' or 'paper' or 'scissors'")
+user_choice = input("CHOOSE'rock' OR 'paper' OR 'scissors': ")
+print ("-------------------")
+print("USER CHOSE:")
 print(user_choice)
+print ("-------------------")
 
+# COMPUTER CHOICE (AT RANDOM)
 
-#COMPUTER CHOICE AT RANDOM TABLE
+options = ["rock", "paper", "scissors"]
 
-computer_options = ["rock", "paper", "scissors"]
-computer_choice = random.choice(computer_options)
-print("--------------------------------------------------------")
-print("COMPUTER HAS CHOSEN:")
+computer_choice = random.choice(options)
+print("COMPUTER CHOSE:")
 print(computer_choice)
+print ("-------------------")
+#Determining the winner
 
-# DETERMING THE WINNER
+##TIE
+#user_choice == computer_choice
 
-print("--------------------------------------------------------")
-if computer_choice == user_choice:
-    print("--------------------------------------------------------")
-    print("BOTH CHOSE THE SAME OUTCOME. IT IS A TIE!")
-    print("--------------------------------------------------------")
+##WIN 
+#user_choice == 'rock' and computer_choice == 'scissors'
+#user_choice == 'paper' and computer_choice == 'rock'
+#user_choice == 'scissors' and computer_choice == 'paper'
 
-elif user_choice == "rock":
-    if computer_choice == "scissors":
-        print("ROCK SMASHES SCISSORS. YOU WIN!")
-    else:
-        print("PAPER COVERS ROCK. YOU LOOSE!")
+##LOSE
+#user_choice == 'rock' and computer_choice == 'paper'
+#user_choice == 'paper' and computer_choice == 'scissors'
+#user_choice == 'scissors' and computer_choice == 'rock'
 
-    print("--------------------------------------------------------")
-    print("THANK YOU FOR PLAYING!!!!!!!!")
-    print("--------------------------------------------------------")
+if user_choice == computer_choice:
+    print ("IT IS A TIE!")
 
-elif user_choice == "paper":
-    if computer_choice == "rock":
-        print("PAPER COVERS ROCK. YOU WIN!")
-    else:
-        print("SCISSORS CUTS PAPER. YOU LOOSE!")
+elif user_choice == 'rock':
+    if computer_choice == 'scissors':
+        print ("AWESOME! YOU WIN")
+    else: 
+        print ("OH, THE COMPUTER WON. IT'S OKAY")
+        #If the computer chooses 'scissors' you win.
+        #Else 'paper' is the other choice left. Thefore, you loose.
 
-    print("--------------------------------------------------------")
-    print("THANK YOU FOR PLAYING!!!!!!!!")
-    print("--------------------------------------------------------")
+elif user_choice == 'paper':
+    if computer_choice == 'rock':
+        print ("AWESOME! YOU WIN")
+    else: 
+        print ("OH, THE COMPUTER WON. IT'S OKAY")
+        #If the computer chooses 'rock' you win.
+        #Else 'scissorsr' is the other choice left. Thefore, you loose.
 
-elif user_choice == "scissors":
-    if computer_choice == "paper":
-        print("SCISSORS CUTS PAPER. YOU WIN!")
-    else:
-        print("ROCK SMASHES SCISSORS. YOU LOOSE!")
-    print("--------------------------------------------------------")
-    print("THANK YOU FOR PLAYING!!!!!!!!")
-    print("--------------------------------------------------------")
+elif user_choice == 'scissors':
+    if computer_choice == 'paper':
+        print ("AWESOME! YOU WIN")
+    else: 
+        print ("OH, THE COMPUTER WON. IT'S OKAY")
+        #If the computer chooses 'paper' you win.
+        #Else 'rock' is the other choice left. Thefore, you loose.
 
-else:
-    print("THAT IS NOT A VALID PLAY! CHECK YOUR SPELLING.")
-    print("--------------------------------------------------------")
+print ("-------------------")
+print ("THANK'S FOR PLAYING. PLEASE PLAY AGAIN")
+print ("-------------------")
