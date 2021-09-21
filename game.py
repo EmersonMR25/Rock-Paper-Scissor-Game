@@ -23,17 +23,18 @@ computer_choice = random.choice(options)
 print("COMPUTER CHOSE:")
 print(computer_choice)
 print ("-------------------")
-#Determining the winner
 
-##TIE
+# DETERMINING THE WINNER
+
+# TIE
 #user_choice == computer_choice
 
-##WIN 
+# WIN 
 #user_choice == 'rock' and computer_choice == 'scissors'
 #user_choice == 'paper' and computer_choice == 'rock'
 #user_choice == 'scissors' and computer_choice == 'paper'
 
-##LOSE
+# LOSE
 #user_choice == 'rock' and computer_choice == 'paper'
 #user_choice == 'paper' and computer_choice == 'scissors'
 #user_choice == 'scissors' and computer_choice == 'rock'
