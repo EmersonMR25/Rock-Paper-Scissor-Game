@@ -48,7 +48,7 @@ elif user_choice == 'rock':
     else: 
         print ("OH, THE COMPUTER WON. IT'S OKAY")
         #If the computer chooses 'scissors' you win.
-        #Else 'paper' is the other choice left. Thefore, you loose.
+        #Else 'paper' is the other choice left. Therefore, you loose.
 
 elif user_choice == 'paper':
     if computer_choice == 'rock':
@@ -56,7 +56,7 @@ elif user_choice == 'paper':
     else: 
         print ("OH, THE COMPUTER WON. IT'S OKAY")
         #If the computer chooses 'rock' you win.
-        #Else 'scissorsr' is the other choice left. Thefore, you loose.
+        #Else 'scissors' is the other choice left. Therefore, you loose.
 
 elif user_choice == 'scissors':
     if computer_choice == 'paper':
@@ -64,7 +64,7 @@ elif user_choice == 'scissors':
     else: 
         print ("OH, THE COMPUTER WON. IT'S OKAY")
         #If the computer chooses 'paper' you win.
-        #Else 'rock' is the other choice left. Thefore, you loose.
+        #Else 'rock' is the other choice left. Therefore, you loose.
 
 print ("-------------------")
 print ("THANK'S FOR PLAYING. PLEASE PLAY AGAIN")
