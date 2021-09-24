@@ -3,6 +3,9 @@ import random
 
 #use OS module x = "player one"
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 x = os.getenv("PLAYER_NAME")
 
