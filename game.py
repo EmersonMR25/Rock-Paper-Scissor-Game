@@ -1,13 +1,15 @@
 # game.py
+
+#import random modeule to allow the application to choose "rock," "paper," or "scissors" at random
 import random
 
-#use OS module x = "player one"
+#use OS module to let x = "PLAYER_ONE"
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
 
-x = os.getenv("PLAYER_NAME")
+x = os.getenv("PLAYER_ONE")
 
 print ("-------------------")
 #print ("WELCOME 'PLAYER_ONE' TO MY ROCK-PAPER-SCISSORS GAME... ")
@@ -16,7 +18,7 @@ print ("-------------------")
 
 # PROMPT USER FOR INPUT
 
-#x = input("Choose 'rock' or 'paper' or 'scissors'")
+#user_choice = input("Choose 'rock' or 'paper' or 'scissors'")
 user_choice = input("PLEASE CHOOSE EITHER 'rock' OR 'paper' OR 'scissors': ")
 print ("-------------------")
 print("YOU CHOSE:")
@@ -31,9 +33,7 @@ if user_choice not in ["rock", "paper", "scissors"]:
     print ("-------------------")
     exit()
 
-
 # COMPUTER CHOICE (AT RANDOM)
-
 options = ["rock", "paper", "scissors"]
 
 computer_choice = random.choice(options)
