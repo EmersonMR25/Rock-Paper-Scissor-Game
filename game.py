@@ -1,19 +1,33 @@
 # game.py
-
 import random
 
+#use OS module x = "player one"
+import os
+
+x = os.getenv("PLAYER_NAME")
+
 print ("-------------------")
-print ("ROCK, PAPER, SCISSORS ... SHOOT! ")
+#print ("WELCOME 'PLAYER_ONE' TO MY ROCK-PAPER-SCISSORS GAME... ")
+print ("WELCOME,", x, "TO MY ROCK-PAPER-SCISSORS GAME... ")
 print ("-------------------")
 
 # PROMPT USER FOR INPUT
 
 #x = input("Choose 'rock' or 'paper' or 'scissors'")
-user_choice = input("CHOOSE'rock' OR 'paper' OR 'scissors': ")
+user_choice = input("PLEASE CHOOSE EITHER 'rock' OR 'paper' OR 'scissors': ")
 print ("-------------------")
-print("USER CHOSE:")
+print("YOU CHOSE:")
 print(user_choice)
 print ("-------------------")
+
+
+#If user choice's not spelled correctly, the program will stop 
+
+if user_choice not in ["rock", "paper", "scissors"]:
+    print ("YOUR CHOICE IS INVALID. CHECK YOUR SPELLING AND TRY AGAIN!! ")
+    print ("-------------------")
+    exit()
+
 
 # COMPUTER CHOICE (AT RANDOM)
 
@@ -46,7 +60,7 @@ elif user_choice == 'rock':
     if computer_choice == 'scissors':
         print ("AWESOME! YOU WIN")
     else: 
-        print ("OH, THE COMPUTER WON. IT'S OKAY")
+        print ("OH, THE COMPUTER WON")
         #If the computer chooses 'scissors' you win.
         #Else 'paper' is the other choice left. Therefore, you loose.
 
@@ -54,7 +68,7 @@ elif user_choice == 'paper':
     if computer_choice == 'rock':
         print ("AWESOME! YOU WIN")
     else: 
-        print ("OH, THE COMPUTER WON. IT'S OKAY")
+        print ("OH, THE COMPUTER WON")
         #If the computer chooses 'rock' you win.
         #Else 'scissors' is the other choice left. Therefore, you loose.
 
@@ -62,7 +76,7 @@ elif user_choice == 'scissors':
     if computer_choice == 'paper':
         print ("AWESOME! YOU WIN")
     else: 
-        print ("OH, THE COMPUTER WON. IT'S OKAY")
+        print ("OH, THE COMPUTER WON")
         #If the computer chooses 'paper' you win.
         #Else 'rock' is the other choice left. Therefore, you loose.
 
