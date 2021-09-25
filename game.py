@@ -24,7 +24,6 @@ print("YOU CHOSE:")
 print(user_choice)
 
 #If user choice's not spelled correctly, the program will stop 
-
 if user_choice not in ["rock", "paper", "scissors"]:
     print ("-------------------")
     print ("YOUR CHOICE IS INVALID. CHECK YOUR SPELLING AND TRY AGAIN! ")
@@ -39,47 +38,42 @@ print("COMPUTER CHOSE:")
 print(computer_choice)
 print ("-------------------")
 
-# DETERMINING THE WINNER
+# DETERMINING THE WINNER (3 WINNING AND LOOSING ROUTES AND 1 TIE ROUTE)
 
-# TIE
+# TIE (1)
 #user_choice == computer_choice
-
-# WIN 
-#user_choice == 'rock' and computer_choice == 'scissors'
-#user_choice == 'paper' and computer_choice == 'rock'
-#user_choice == 'scissors' and computer_choice == 'paper'
-
-# LOSE
-#user_choice == 'rock' and computer_choice == 'paper'
-#user_choice == 'paper' and computer_choice == 'scissors'
-#user_choice == 'scissors' and computer_choice == 'rock'
-
 if user_choice == computer_choice:
     print ("IT IS A TIE!")
 
+# WIN (1)
+#user_choice == 'rock, so if the computer_choice=='scissors' you win
+# LOOSE(1)
+#Else 'paper' is the other choice left. Therefore, you loose
 elif user_choice == 'rock':
     if computer_choice == 'scissors':
         print ("AWESOME! YOU WIN")
     else: 
         print ("OH, THE COMPUTER WON")
-        #If the computer chooses 'scissors' you win.
-        #Else 'paper' is the other choice left. Therefore, you loose.
 
+# WIN (2)
+#user_choice == 'paper', so if the computer chooses 'rock' you win
+# LOOSE (2)
+#Else 'scissors' is the other choice left. Therefore, you loose.
 elif user_choice == 'paper':
     if computer_choice == 'rock':
         print ("AWESOME! YOU WIN")
     else: 
         print ("OH, THE COMPUTER WON")
-        #If the computer chooses 'rock' you win.
-        #Else 'scissors' is the other choice left. Therefore, you loose.
 
+# WIN (3)
+#user_choice == 'scissors', so if the computer chooses 'paper' you win
+#LOOSE (3)
+#Else 'rock' is the other choice left. Therefore, you loose
 elif user_choice == 'scissors':
     if computer_choice == 'paper':
         print ("AWESOME! YOU WIN")
     else: 
         print ("OH, THE COMPUTER WON")
-        #If the computer chooses 'paper' you win.
-        #Else 'rock' is the other choice left. Therefore, you loose.
 
 print ("-------------------")
 print ("THANK'S FOR PLAYING. PLEASE PLAY AGAIN")
