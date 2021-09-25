@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-x = os.getenv("PLAYER_ONE")
+x = os.getenv("PLAYER_ONE", default="PLAYER_ONE")
 
 print ("-------------------")
 #print ("WELCOME 'PLAYER_ONE' TO MY ROCK-PAPER-SCISSORS GAME... ")
