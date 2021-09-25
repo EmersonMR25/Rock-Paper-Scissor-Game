@@ -17,19 +17,17 @@ print ("WELCOME,", x, "TO MY ROCK-PAPER-SCISSORS GAME... ")
 print ("-------------------")
 
 # PROMPT USER FOR INPUT
-
 #user_choice = input("Choose 'rock' or 'paper' or 'scissors'")
-user_choice = input("PLEASE CHOOSE EITHER 'rock' OR 'paper' OR 'scissors': ")
+user_choice = input("PLEASE CHOOSE EITHER 'rock', 'paper', OR 'scissors': ")
 print ("-------------------")
 print("YOU CHOSE:")
 print(user_choice)
-print ("-------------------")
-
 
 #If user choice's not spelled correctly, the program will stop 
 
 if user_choice not in ["rock", "paper", "scissors"]:
-    print ("YOUR CHOICE IS INVALID. CHECK YOUR SPELLING AND TRY AGAIN!! ")
+    print ("-------------------")
+    print ("YOUR CHOICE IS INVALID. CHECK YOUR SPELLING AND TRY AGAIN! ")
     print ("-------------------")
     exit()
 
